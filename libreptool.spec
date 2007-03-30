@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Biblioteka do raportowania
 Name:		libreptool
 Version:	0.0.1
 Release:	1
-License:	GPL
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/reptool/%{name}-%{version}.tar.gz
 # Source0-md5:	b12314049c3094a8d1833cdfe45fb7fd
