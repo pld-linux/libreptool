@@ -8,11 +8,13 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/reptool/%{name}-%{version}.tar.gz
 # Source0-md5:	b12314049c3094a8d1833cdfe45fb7fd
 URL:		http://sourceforge.net/projects/reptool/
+BuildRequires:	cairo-devel >= 1.0.0
+BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	gtk-doc
-BuildRequires:	libgda-devel
-BuildRequires:	gtk+2-devel
-BuildRequires:	libxml2-devel
-BuildRequires:	libxslt-devel
+BuildRequires:	libgda-devel >= 1.2.3
+BuildRequires:	libxml2-devel >= 1:2.6.0
+BuildRequires:	pango-devel >= 1.12
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,6 +44,11 @@ Summary:	Header files for libreptool library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libreptool
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	cairo-devel >= 1.0.0
+Requires:	glib2-devel >= 1:2.6.0
+Requires:	libgda-devel >= 1.2.3
+Requires:	libxml2-devel >= 1:2.6.0
+Requires:	pango-devel >= 1.12
 
 %description devel
 Header files for libreptool library.
