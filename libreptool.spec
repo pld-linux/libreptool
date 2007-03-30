@@ -1,10 +1,10 @@
-#
 Summary:	Library for reporting
+Summary(pl.UTF-8):	Biblioteka do raportowania
 Name:		libreptool
 Version:	0.0.1
 Release:	1
 License:	GPL
-Group:		Applications
+Group:		Libraries
 Source0:	http://dl.sourceforge.net/reptool/%{name}-%{version}.tar.gz
 # Source0-md5:	b12314049c3094a8d1833cdfe45fb7fd
 URL:		http://sourceforge.net/projects/reptool/
@@ -16,10 +16,14 @@ BuildRequires:	libxslt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Reptool is a reporting/printing tool. libreptool, which manage source
-files that are the report's definition, and it produces the
-report/print; and greptool, which visually creates source files. It is
-based on glib, libxml, Gtk+, cairo, pango, libgda.
+Reptool is a reporting/printing tool based on libreptool, which manage
+source files that are the report's definition, and it produces the
+report/print.
+
+%description -l pl.UTF-8
+reptool to narzędzie do raportowania/drukowania oparte na bibliotece
+libreptool, zarządzającej plikami źródłowymi będącymi definicją
+raportu i tworzącej raport/wydruk.
 
 %package apidocs
 Summary:	libreptool API documentation
@@ -80,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/*.so.*
+%attr(755,root,root) %{_libdir}/*.so.*.*.*
 
 %files apidocs
 %defattr(644,root,root,755)
@@ -88,9 +92,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/*
-%{_libdir}/*.so
+%attr(755,root,root) %{_libdir}/*.so
 %{_libdir}/*.la
+%{_includedir}/*
 %{_pkgconfigdir}/*.pc
 
 %files static
