@@ -1,12 +1,12 @@
 Summary:	Library for reporting
 Summary(pl.UTF-8):	Biblioteka do raportowania
 Name:		libreptool
-Version:	0.0.1
+Version:	0.0.4
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/reptool/%{name}-%{version}.tar.gz
-# Source0-md5:	b12314049c3094a8d1833cdfe45fb7fd
+# Source0-md5:	85cd4098095ae4077398e09be5c89298
 URL:		http://sourceforge.net/projects/reptool/
 BuildRequires:	cairo-devel >= 1.0.0
 BuildRequires:	glib2-devel >= 1:2.6.0
